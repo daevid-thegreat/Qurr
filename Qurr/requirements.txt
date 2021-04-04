@@ -1,1 +1,10 @@
-requirement file....
+# Dependencies for generating/publishing Python binaries.
+django == 3.17
+python == 3.9
+
+# Sub-dependencies.
+ XRegExp == 3.2.0
+ jQuery == 3.5.1
+UI frameworks 
+ Bootstrap 4.5.2
+ 
