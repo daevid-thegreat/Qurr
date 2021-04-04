@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center>
+    <div class="alert alert-primary" role="alert">
+    <p> Your shortened URL is
+        <input  type="text" value="127.0.0.1:8000/{{ chars }}" id="shorturl" >
+
+<button class="btn btn-success" onclick="myFunction()">Copy url</button>
+
+
+
+    </p>
+    </div>
+</center>
+{% endblock content %}

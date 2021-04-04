@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="title bg-info ">{{ post.title }}</h1>
+<small> Posted at {{ post.date_added }}</small>
+<p><strong>{{ post.intro }}</strong></p>
+<p class="bg-light"> {{ post.body }}</p>
+<hr>
+
+<h2 class="subtitle">Comments</h2>
+
+    {% for comment in post.comments.all %}
+<article class="media bg-light">
+    <div class="media-content">
+        <div class="content">
+            <p>
+                <strong>{{ comment.name }}</strong>
+                <small>{{ comment.date_added }}</small>
+                <br>
+                {{ comment.body }}
+            </p>
+        </div>
+    </div>
+</article>
+        {% empty %}
+<div class="notification">
+    <p>Be the first to comment</p>
+</div>
+
+{% endfor %}
+
+
+
+
+<hr>
+
+<h2 class="subtitle"> Add Comment !!</h2>
+<form method="post" action=".">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+
+
+    <div class="field ">
+        <div class="control">
+            <button class="btn btn-success">Submit</button>
+        </div>
+    </div>
+</form>
+
+
+
+
+{% endblock content %} 

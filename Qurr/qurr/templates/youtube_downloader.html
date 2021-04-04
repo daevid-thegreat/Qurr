@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="mt-5">
+<center><h1>Download Youtube Video</h1></center>
+</div>
+
+<div class="container mt-5">
+
+<form method="GET" action="download/">
+  <div class="form-group align-items-center">
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInput"></label>
+
+      <input name="url" type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Paste Youtube link here">
+    </div>
+
+    </div>
+    <center>
+
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2">Go</button>
+    </div>
+
+
+
+  </center>
+  </form>
+  </div>
+
+{% endblock content %}
