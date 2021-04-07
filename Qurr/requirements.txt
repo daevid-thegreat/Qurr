@@ -1,4 +1,4 @@
 # Dependencies for generating/publishing Python binaries.
 django == 3.1.3
-
+gunicorn == 20.1.0
  
