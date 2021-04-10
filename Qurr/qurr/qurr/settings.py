@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'rkskt7i3xwo-4z-fe-g25k^aohc**c3)7&e64%6q4224t&*z9a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['qurr.herokuapp.com', 'www.qurr.xyz', 'www.qurr.herokuapp.com', 'qurr.xyz']
 
