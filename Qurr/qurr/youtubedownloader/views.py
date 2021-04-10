@@ -25,6 +25,7 @@ def download(request):
 
 def download_done(request, resolution):
     global url
+    url = request.GET.get('url')
     homedir = os.path.expanduser("~")
     dirs = homedir + '/Downloads'
     if request.method == "POST":
